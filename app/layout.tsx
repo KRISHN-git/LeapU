@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   title: { default: 'KRISHN — Interactive Lab', template: '%s | Your Name' },
   description: 'Computer Vision, Systems Programming, and Full-Stack Web Development.',
   openGraph: {
-    title: 'Your Name — Interactive Lab',
+    title: 'Krishn Kumar — Interactive Lab',
     description: 'Computer Vision, Systems Programming, and Full-Stack Web Development.',
     url: 'https://yourname.dev',
     siteName: 'KRISHN',

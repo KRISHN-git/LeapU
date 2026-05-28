@@ -1,9 +1,9 @@
+import { HeroSection } from '@/components/sections/HeroSection'
+
 export default function HomePage() {
   return (
     <>
-      <section id="hero" className="flex min-h-screen items-center justify-center">
-        <p className="text-zinc-500 text-sm">Hero section</p>
-      </section>
+      <HeroSection />
       <section id="projects" className="min-h-screen flex items-center justify-center border-t border-zinc-800">
         <p className="text-zinc-500 text-sm">Projects</p>
       </section>
