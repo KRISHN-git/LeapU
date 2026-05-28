@@ -1,0 +1,43 @@
+---
+title: "HTTP Server"
+
+description: "High-performance multithreaded HTTP server built in C++ with scalable socket handling using epoll/kqueue/Winsock and modern design patterns."
+
+tags: ["C++", "Multithreading", "Thread Pool", "CMake", "epoll", "kqueue", "Winsock"]
+
+githubUrl: "https://github.com/yourusername/http-server"
+
+videoUrl: "/videos/http-server-demo.mp4"
+
+featured: true
+
+date: "2025-01-10"
+
+---
+
+## Overview
+
+A high-performance cross-platform HTTP server engineered in modern C++ to efficiently handle massive concurrent client connections with low latency.
+
+The server leverages multithreading, asynchronous I/O multiplexing, and scalable socket management to provide reliable performance under heavy network traffic.
+
+## Features
+
+- Cross-platform support for Linux, macOS, and Windows
+- Efficient event-driven architecture using epoll, kqueue, and Winsock
+- Custom thread pool implementation for optimized request handling
+- Modular architecture following SOLID principles
+- Factory and Builder design patterns for extensibility
+- Automated builds and dependency management with CMake
+
+## Architecture
+
+The server distributes incoming client requests through a scalable thread pool while asynchronous socket monitoring handles I/O events efficiently.
+
+Different platform-specific backends are abstracted cleanly to maintain portability across operating systems.
+
+## Results
+
+- Successfully handled 20K+ concurrent client connections
+- Achieved low-latency request processing under heavy load
+- Cross-platform deployment across Linux, macOS, and Windows

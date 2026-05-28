@@ -1,0 +1,43 @@
+---
+title: "Aerial Guardian"
+
+description: "Drone-based real-time person tracking and detection system optimized for aerial surveillance using YOLOv8, ByteTrack, and TensorRT."
+
+tags: ["Python", "YOLOv8", "ByteTrack", "OpenCV", "ONNX", "TensorRT"]
+
+githubUrl: "https://github.com/KRISHN-git/aerial_guardian"
+
+featured: true
+
+date: "2025-02-22"
+
+---
+
+## Overview
+
+Aerial Guardian is a real-time drone surveillance pipeline developed for robust aerial person detection and tracking in dynamic environments.
+
+The project combines optimized object detection, adaptive inference strategies, and motion-aware tracking to maintain stable identities during drone movement.
+
+## Features
+
+- Fine-tuned YOLOv8-S model on VisDrone dataset
+- Adaptive tiled inference for small-object detection
+- ByteTrack-based multi-object tracking
+- ORB-RANSAC homography-based global motion compensation
+- ONNX Runtime and TensorRT optimized deployment
+- Jetson-compatible edge inference pipeline
+
+## Architecture
+
+The system dynamically adjusts tiled inference regions based on optical flow magnitude to improve recall on aerial footage.
+
+Tracking consistency is maintained using ByteTrack trajectories and custom homography compensation.
+
+## Results
+
+- Achieved +74.8% mAP@0.5 improvement on VisDrone
+- Achieved +83.6% recall over COCO baseline
+- Improved small-object recall by 3–5×
+- Achieved 30–40 FPS deployment on NVIDIA Jetson devices
+- Exported optimized ONNX pipeline within 300MB deployment constraint
