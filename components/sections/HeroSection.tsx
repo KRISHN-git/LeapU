@@ -27,12 +27,12 @@ export function HeroSection() {
   const [gestureLabel, setGestureLabel] = useState<string | null>(null)
   const [loading, setLoading] = useState(false)
   const sectionIndexRef = useRef(0)
-  const toastTimer = useRef<ReturnType<typeof setTimeout>>()
+  const toastTimer = useRef<ReturnType<typeof setTimeout> | null>(null)
 
   const showToast = (label: string) => {
-    setGestureLabel(label)
-    clearTimeout(toastTimer.current)
-    toastTimer.current = setTimeout(() => setGestureLabel(null), 1800)
+  setGestureLabel(label)
+  if (toastTimer.current !== null) clearTimeout(toastTimer.current)
+  toastTimer.current = setTimeout(() => setGestureLabel(null), 1800)
   }
 
   const handleGesture = useCallback((gesture: GestureType) => {
